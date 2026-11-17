@@ -5,8 +5,6 @@ const configTime = (keyword) => {
 
     let start, end;
     
-    // Định dạng mong muốn: "Giờ:Phút:Giây Ngày/Tháng/Năm" hoặc các biến thể lược bỏ
-    // Thử khớp với các trường hợp từ chi tiết đến bao quát
     
     // 1. Có đủ Giờ:Phút:Giây Ngày/Tháng/Năm (VD: 12:38:30 11/05/2026)
     if (moment(keyword, "HH:mm:ss DD/MM/YYYY", true).isValid()) {

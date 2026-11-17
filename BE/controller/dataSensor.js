@@ -44,7 +44,6 @@ module.exports.getData = async (req, res) => {
                 if (timeRange) {
                     where.createdAt = { [Op.between]: [timeRange.start, timeRange.end] };
                 } else {
-                    // Nếu gõ ngày sai định dạng khi đang chọn lọc theo thời gian
                     where.id = null; 
                 }
             } 
